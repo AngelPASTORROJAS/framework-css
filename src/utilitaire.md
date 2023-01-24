@@ -1,3 +1,4 @@
+Auteur: PASTOR ROJAS angel daniel
     Ctrl + Shift + P : ouvre la boîte de commande.
     Ctrl + P : permet de faire une recherche rapide de fichiers dans le projet.
     Ctrl + Shift + N : ouvre une nouvelle fenêtre.
@@ -12,12 +13,3 @@
     F12 : accède à la définition d'un symbole.
 
     https://www.alsacreations.com/article/lire/1621-responsive-images-srcset.html
-```script
-L'objet média
-Nos services
-Notre boutique
-
-L'agence 
-Conseils & actualité
-Contactez-nous ->
-```

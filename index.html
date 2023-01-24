@@ -1,90 +1,355 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- https://www.figma.com/file/y3rV7fdJX50zOLcFpdnOxJ/Thot?node-id=1101%3A157&t=50lnkRWnMXtNUzdX-0 -->
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="src/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="src/css/bootstrap-icons.css"/>
-        <title>Alize</title>
-    </head>
 
-    <body id="grad">
-        <header>
-            <img src="src/img/Logo/Logo.png" alt="logo Alize"/>
-            <nav class="navbar navbar-expand-md sticky-top">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="menu">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <div class="d-flex">
-                                    <img style="max-height: 100%; width: auto;" src="src/img/Logo/Vector.png" alt="Cube">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        L'objet média
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">Object 1</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Object 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </li>
-                        <li class="nav-item">
+<head>
+    <!-- https://www.figma.com/file/y3rV7fdJX50zOLcFpdnOxJ/Thot?node-id=1101%3A157&t=50lnkRWnMXtNUzdX-0 -->
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/bootstrap-icons.css" />
+    <script src="src/js/bootstrap.min.js"></script>
+    <title>Alize</title>
+</head>
+
+<body id="grad">
+    <header>
+        <img src="src/img/Logo/Logo.png" alt="logo Alize" />
+        <nav class="navbar navbar-expand-md NAVIGATION GAUCHE">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item m-2 OBJET MEDIA">
                             <div class="d-flex">
-                                <img src="src/img/Logo/idea.png" alt="Logo idée">
+                                <img height="30" src="src/img/Logo/Vector.png" alt="Cube">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    L'objet média
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">Object 1</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">Object 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item m-2 NOS SERVICES">
+                            <div class="d-flex">
+                                <img height="30" src="src/img/Logo/idea.png" alt="Logo idée">
                                 <a class="nav-link text-nowrap" href="#">Nos services</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item m-2 NOTRE BOUTIQUE">
                             <div class="d-flex">
-                                <img src="src/img/Logo/shop.png" alt="Logo boutique">
+                                <img height="30" src="src/img/Logo/shop.png" alt="Logo boutique">
                                 <a class="nav-link text-nowrap" href="#">Notre boutique</a>
                             </div>
                         </li>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto NAVIGATION DROITE">
+                        <li class="nav-item L'AGENCE">
+                            <a class="nav-link" href="#">L'agence</a>
+                        </li>
+                        <li class="nav-item CONSEILS & ACUALITE">
+                            <a class="nav-link" href="#">Conseils & actualité</a>
+                        </li>
+                        <li class="nav-item CONTACTEZ-NOUS">
+                            <div class="d-flex bg-primary rounded-3">
+                                <a class=" text-white nav-link" href="#">Contactez-nous<img class="float-end mx-auto"
+                                        src="src/img/icons/arrow.png" height="10px" width="20px"
+                                        alt="icône flèche droite"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <ul class="nav justify-content-center border SUB-NAVIGATION">
+            <li class="nav-item">
+                <a class="nav-link dropdown-toggle text-dark" href="#">Catégories produits</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Inspiration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Cataloques PDF</a>
+            </li>
+        </ul>
+    </header>
+    <div class="text-center bg-secondary p-5 HERO-SEARCH" style="--bs-bg-opacity: .2;">
+        <img class="w-25" max-height="30px" src="./src/img/objet-cle.jpg" alt="">
+        <h2 class="fw-bold">Trouver l'objet média qui vous correspond</h2>
+        <p>Mox dicta finierat, multitudo omnis ad, quae imperator voluit, promptior laudato consilio consensit in pacem.</p>
+        <div>
+            <div class="dropdown MENU-CATEGORIES">
+                <a class="btn btn-primary rounded-start dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Catégorie
+                </a>
+                <ul class="dropdown-menu CATEGORIES">
+                  <li><a class="dropdown-item" href="#">AUTO - MOTO</a></li>
+                  <li><a class="dropdown-item" href="#">BAGAGE - VOYAGE</a></li>
+                  <li><a class="dropdown-item" href="#">BEAUTE - SANTE</a></li>
+                  <li><a class="dropdown-item" href="#">BUREAU</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="CORPS">
+        <div class="row m-5 INSPIRATION-PROMOTION justify-content-center">
+            <div class="col-lg-6 m-2 p-3 INSPIRATION d-flex align-content-end flex-column-reverse bg-success rounded-3">
+                <p>Mox dicta finierat, multitudo omnis ad, quae imperator <br> voluit, promptior laudato consilio consensit in pacem.</p>
+                <h3 class="fw-bold">Made in france</h3>
+                <strong>INSPIRATION</strong>
+            </div>
+            <div class="col-lg-4 m-2 p-3 PROMOTION text-center bg-primary rounded-3">
+                <p><img src="./src/img/Logo/megaphone.png" alt="mégaphone"></p>
+                <strong class="pb-5">PROMOTIONS</strong>
+                <h3 class="fw-bold">Multitudo omnis</h3>
+                <a class="btn btn-primary text-white nav-link bg-black rounded-3" 
+                    href="#">Voir toutes les promotions
+                    <img class="float-end mx-auto" src="src/img/icons/arrow.png" alt="icône flèche droite">
+                </a>
+            </div>
+        </div>
+        <div class="row pt-4 m-5 CATEGORIES">
+            <h4 class="fw-bold">Nos catégories de produits</h4>
+            <div class="justify-content-center ">    
+                <figure class="col-lg figure">
+                    <img height="191" src="./src/img/moto.jpg" class="figure-img rounded " alt="...">
+                    <figcaption class="figure-caption fw-bold">AUTO - MOTO</figcaption>
+                </figure>
+                <figure class="col-lg figure">
+                    <img height="191" src="./src/img/voyage.jpg" class="figure-img rounded" alt="...">
+                    <figcaption class="figure-caption fw-bold">BAGAGE - VOYAGE</figcaption>
+                </figure>
+                <figure class="col-lg figure">
+                    <img height="191" src="./src/img/spa.jpg" class="figure-img rounded" alt="...">
+                    <figcaption class="figure-caption fw-bold">BEAUTE - SANTE</figcaption>
+                </figure>
+                <figure class="col-lg figure">
+                    <img height="191" src="./src/img/bureau.jpg" class="figure-img rounded" alt="...">
+                    <figcaption class="figure-caption fw-bold">BUREAU</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="text-center pt-4 m-5 PRODUITS">
+            <p class="fw-bold">NOS PRODUITS</p>
+            <h3 class="fw-bold">Découvrez nos best-sellers</h3>
+            <div class="row justify-content-center m-4">
+                <div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center m-5 NOUVEAUTE">
+            <p class="fw-bold">NOUVEAUTE</p>
+            <h3 class="fw-bold">Ca vient juste d'arriver !</h3>
+            <div class="row justify-content-center m-4">
+                <div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div>
+                <div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div><div class="col-lg card m-2">
+                    <div class="card-body">
+                        <img class="m-3" src="./src/img/icons/Icon-picture.png" alt="">
+                        <h6 class="card-subtitle mb-2 text-muted m-2">Catégorie produit</h6>
+                        <h5 class="card-title mb-5">Titre du produit</h5>
+                        <p class="card-text">à partir de <strong>00,00€</strong> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="SERVICES / CONSEILS">
+            <div class="TITLE text-center">
+                <h2 class="fw-bold">Alizé communication c'est aussi ...</h2>
+            </div>
+            <div class="SERVICES"></div>
+            <div class="CONSEILS"></div>
+        </div>
+    </div>
+    
+    <footer class="bg-secondary text-white pt-4">
+        <div class="row text-center REFERENCES">
+            <div class="m-3 col-lg-2 L'OBJET MEDIA">
+                <h5>
+                    <b>L'objet média</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Presentation</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Comment ça marche ?</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Le livre blanc</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos magazines</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">L'agence</a>
+            </div>
+            <div class="m-3 col-lg-2 NOS SERVICES">
+                <h5>
+                    <b>Nos services</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos expertises</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Conseils & actualité</a>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Technique de marque</a>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex bg-black rounded-3">
-                            <a class=" text-white nav-link" href="#">Contactez-nous<img class="float-end" src="src/img/icons/arrow.png" height="10px" width="20px" alt="icône flèche droite"></a>
-                            
-                        </div>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Sur-mesure</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Comment ça marche</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos conseils</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-3 col-lg-2 NOTRE BOUTIQUE">
+                <h5>
+                    <b>Notre boutique</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos produits</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Catalogues PDF</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Catalogue Corporate</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Alizé en chiffres</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos engagements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-3 col-lg-2 L'AGENCE">
+                <h5>
+                    <b>L'agence</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Qui sommes-nous</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">L'équipe</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Alizé en chiffres</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos engagements</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-3 col-lg-2 AUTRES LIENS">
+                <h5>
+                    <b>Autres liens</b>
+                </h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Conseils & actualités</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Politique de confidentialité</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Catalogue Corporate</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Alizé en chiffres</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="#" class="nav-link p-0 text-white">Nos engagements</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </header>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" href="#">Catégories produits</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Inspiration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Cataloques PDF</a>
-        </li>
-      </ul>
-    <footer></footer></body></html></header>
-<script src="src/js/bootstrap.min.js"></script>
-<!-- <style>
-    #grad {
-        background: #fc00ff;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-</style> -->
-<!-- <script src="src/js/jquery.min.js"></script> -->
-</body></html>
+        <div class="d-flex justify-content-center py-4 my-4 DROITS RESERVES">
+            <p>© Alizé Communication - Tous droits réservés</p>
+        </div>
+    </footer>
+    <!-- <style>
+        #grad {
+            background: #fc00ff;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    </style> -->
+</body>
+
+</html>
